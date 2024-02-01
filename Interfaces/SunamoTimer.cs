@@ -1,4 +1,7 @@
+
 namespace SunamoInterfaces.Interfaces;
+using SunamoDelegates;
+
 
 public class SunamoTimer
 {

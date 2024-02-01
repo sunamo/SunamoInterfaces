@@ -1,4 +1,7 @@
+
 namespace SunamoInterfaces.Interfaces;
+using SunamoDelegates;
+
 
 /// <summary>
 /// Dont use, instead of this IControlWithResult

@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 
 public interface ITextOutputGenerator
 {
@@ -23,7 +23,7 @@ public interface ITextOutputGenerator
     void List(IList<string> files1);
     void List(IList<string> files1, string header);
     void List<Header, Value>(IList<Value> files1, Header header) where Header : IEnumerable<char>;
-    void List<Header, Value>(IList<Value> files1, Header header, TextOutputGeneratorArgs a) where Header : IEnumerable<char>;
+    void List<Header, Value>(IList<Value> files1, Header header, object textOutputGeneratorArgs) where Header : IEnumerable<char>;
     void List<Value>(IList<Value> files1, string deli = "\r\n", string whenNoEntries = "");
     void ListObject(IList files1);
     void ListSB(StringBuilder onlyStart, string v);

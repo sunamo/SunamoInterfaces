@@ -1,4 +1,4 @@
-namespace SunamoShared;
+namespace SunamoInterfaces.Interfaces;
 
 public interface IProgressBar
 {

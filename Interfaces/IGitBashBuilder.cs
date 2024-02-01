@@ -17,7 +17,7 @@ public interface IGitBashBuilder
     void Cd(string key);
     void Clean(string v);
     void Clear();
-    void Clone(string repoUri, string args = Consts.se);
+    void Clone(string repoUri, string args);
     void Commit(bool addAllUntrackedFiles, string commitMessage);
     void Config(string v);
     void Fetch(string s);

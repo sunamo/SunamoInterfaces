@@ -1,4 +1,4 @@
-namespace SunamoShared.Helpers.Net;
+namespace SunamoInterfaces.Interfaces;
 
 public class IPAddressHelper
 {

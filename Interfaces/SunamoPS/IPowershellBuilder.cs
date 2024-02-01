@@ -6,7 +6,7 @@ public interface IPowershellBuilder
     INpmBashBuilder Npm { get; set; }
     void AddArg(string argName, string argValue);
     void AddRaw(string v);
-    void AddRawLine(string v = Consts.se);
+    void AddRawLine(string v);
     ///// <summary>
     ///// Musí být i bez QS protože když pracuji s interfacem, do něj nejde default hodnota - možná jde, viz výše
     ///// </summary>
@@ -28,5 +28,5 @@ public interface IPowershellBuilder
     List<string> ToList();
     string ToString();
     void YtDlp(string url);
-    TextBuilder sb { get; set; }
+    ITextBuilder sb { get; set; }
 }
