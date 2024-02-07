@@ -3,7 +3,7 @@ namespace SunamoInterfaces.Interfaces;
 public interface ITextBuilder
 {
     bool CanUndo { get; set; }
-
+    List<string> list { get; set; }
     void Append(object s);
     void Append(string s);
     void AppendLine();
