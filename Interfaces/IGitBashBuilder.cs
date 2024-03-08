@@ -1,26 +1,23 @@
-namespace SunamoInterfaces.Interfaces;
+﻿
+namespace SunamoGitBashBuilder;
 
 public interface IGitBashBuilder
 {
     List<string> Commands { get; }
 
     void Add(string v);
-    /// <summary>
-    /// In A1 can be git@github.com:sunamo/SunamoYouTube.git
-    /// </summary>
-    /// <param name="s"></param>
     void AddNewRemote(string s);
-    void Checkout(string text);
     void Append(string text);
     void AppendLine();
     void AppendLine(string text);
     void Cd(string key);
+    void Checkout(string arg);
     void Clean(string v);
     void Clear();
     void Clone(string repoUri, string args);
     void Commit(bool addAllUntrackedFiles, string commitMessage);
     void Config(string v);
-    void Fetch(string s);
+    void Fetch(string s = "");
     void Init();
     void Merge(string v);
     void Pull();

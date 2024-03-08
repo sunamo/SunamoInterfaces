@@ -1,8 +1,7 @@
-namespace SunamoInterfaces.Interfaces.SunamoPS;
+
 
 public interface IPowershellBuilder
 {
-    IGitBashBuilder Git { get; set; }
     INpmBashBuilder Npm { get; set; }
     void AddArg(string argName, string argValue);
     void AddRaw(string v);
