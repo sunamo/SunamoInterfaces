@@ -10,7 +10,7 @@ namespace SunamoInterfaces.Interfaces;
 /// Toto se d� pou��t, pokud chc i vracet Ppk. Je to trochu nel, ale d� se to.
 /// </summary>
 /// <typeparam name="T"></typeparam>
-public interface ISearching<T>
+public interface ISearchingT<T>
 {
     T Search(string co);
 }
@@ -22,6 +22,6 @@ public interface ISearching<T>
 /// Pokud je ve t��d� v�ce t��d s int. stejn�m hled�n�m..
 /// To by m� zaj�mlo, pro� jsem to tak debiln� pod�dil
 /// </summary>
-public interface ISearching : ISearching<string>
+public interface ISearching : ISearchingT<string>
 {
 }

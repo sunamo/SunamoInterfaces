@@ -1,11 +1,7 @@
 namespace SunamoInterfaces.Interfaces;
 
-public interface IParser<T>
+public interface IParserExt<T>
 {
     T Parse(string co);
 }
 
-public interface IParserCollection<T>
-{
-    List<T> ParseCollection(string co);
-}

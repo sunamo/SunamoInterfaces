@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SunamoInterfaces.Interfaces;
-public interface IIdentificator<T>
+public interface IIdentificatorT<T>
 {
     T Id { get; set; }
     bool IsChecked { get; set; }

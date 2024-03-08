@@ -1,11 +1,11 @@
 namespace SunamoInterfaces.Interfaces;
 
-public interface ISimpleConverter<TypeInClassName, U>
+public interface ISimpleConverterT<TypeInClassName, U>
 {
     TypeInClassName ConvertTo(U u);
     U ConvertFrom(TypeInClassName t);
 }
 
-public interface ISimpleConverter : ISimpleConverter<string, string>
+public interface ISimpleConverter : ISimpleConverterT<string, string>
 {
 }

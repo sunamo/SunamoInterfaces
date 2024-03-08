@@ -3,7 +3,7 @@ namespace SunamoInterfaces.Interfaces;
 using HtmlAgilityPack;
 
 
-public interface ISunamoBrowser<T> : ISunamoBrowser
+public interface ISunamoBrowserT<T> : ISunamoBrowser
 {
 
 }
