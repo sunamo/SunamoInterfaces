@@ -1,9 +1,5 @@
 namespace SunamoInterfaces.Interfaces;
 
-public interface ILoggerBaseCmd
-{
-}
-
 public interface ILoggerBase
 {
     void ClipboardOrDebug(string v, params string[] args);

@@ -1,12 +1,5 @@
-
 namespace SunamoInterfaces.Interfaces;
 using HtmlAgilityPack;
-
-
-public interface ISunamoBrowserT<T> : ISunamoBrowser
-{
-
-}
 
 /// <summary>
 /// A1 je třída Control závislá na typu cílové aplikace

@@ -1,20 +1,5 @@
 namespace SunamoInterfaces.Interfaces;
 
-/// <summary>
-///
-/// </summary>
-
-
-
-/// <summary>
-/// Toto se d� pou��t, pokud chc i vracet Ppk. Je to trochu nel, ale d� se to.
-/// </summary>
-/// <typeparam name="T"></typeparam>
-public interface ISearchingT<T>
-{
-    T Search(string co);
-}
-
 
 
 /// <summary>
