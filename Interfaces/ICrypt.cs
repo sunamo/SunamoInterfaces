@@ -1,23 +1,5 @@
 namespace SunamoInterfaces.Interfaces;
 
-public interface ICryptHelper
-{
-    List<byte> Decrypt(List<byte> v);
-    List<byte> Encrypt(List<byte> v);
-}
-
-public interface ICryptString
-{
-    string Decrypt(string v);
-    string Encrypt(string v);
-}
-
-public interface ICryptBytes : ICrypt
-{
-    List<byte> Decrypt(List<byte> v);
-    List<byte> Encrypt(List<byte> v);
-}
-
 public interface ICrypt
 {
     List<byte> s { set; get; }
