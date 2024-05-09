@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces.Interfaces;
 public interface ICryptString
 {
     string Decrypt(string v);

@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces.Interfaces;
 [ComVisible(true)]
 [InterfaceType(ComInterfaceType.InterfaceIsDual)]
 /// <summary>

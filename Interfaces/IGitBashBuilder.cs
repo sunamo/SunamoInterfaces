@@ -1,5 +1,5 @@
-﻿
-namespace SunamoGitBashBuilder;
+
+namespace SunamoInterfaces.Interfaces;
 
 public interface IGitBashBuilder
 {

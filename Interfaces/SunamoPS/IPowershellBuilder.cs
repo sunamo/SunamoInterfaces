@@ -1,3 +1,4 @@
+namespace SunamoInterfaces.Interfaces.SunamoPS;
 
 
 public interface IPowershellBuilder
