@@ -1,7 +1,7 @@
 namespace
 #if SunamoFileSystem
 SunamoFileSystem
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

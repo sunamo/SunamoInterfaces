@@ -1,7 +1,7 @@
 namespace
 #if SunamoCompare
 SunamoCompare
-#else SunamoInterfacesData
+#else
 SunamoInterfacesData
 #endif
 ;

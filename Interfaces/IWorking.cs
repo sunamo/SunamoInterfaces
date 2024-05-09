@@ -1,7 +1,7 @@
 namespace
 #if SunamoFtp
 SunamoFtp
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

@@ -2,7 +2,7 @@
 namespace
 #if SunamoCrypt
 SunamoCrypt
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

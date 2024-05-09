@@ -7,7 +7,7 @@ SunamoPS
 SunamoShared
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

@@ -9,7 +9,7 @@ SunamoFileSystem
 SunamoNumbers
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

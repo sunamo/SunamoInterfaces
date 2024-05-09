@@ -1,7 +1,7 @@
 namespace
 #if SunamoPS
 SunamoPS
-#else SunamoInterfacesInterfacesSunamoPS
+#else
 SunamoInterfacesInterfacesSunamoPS
 #endif
 ;

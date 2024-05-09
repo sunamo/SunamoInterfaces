@@ -1,7 +1,7 @@
 namespace
 #if SunamoCollectionWithoutDuplicates
 SunamoCollectionWithoutDuplicates
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

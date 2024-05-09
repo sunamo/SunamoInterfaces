@@ -3,7 +3,7 @@ namespace
 SunamoCl
 #elif SunamoCrypt
 SunamoCrypt
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

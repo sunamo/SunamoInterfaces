@@ -3,7 +3,7 @@ namespace
 SunamoShared
 #elif SunamoWinStd
 SunamoWinStd
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

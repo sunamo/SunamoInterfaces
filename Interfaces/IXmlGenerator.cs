@@ -6,7 +6,7 @@ namespace
 SunamoDevCode
 #elif SunamoXml
 SunamoXml
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

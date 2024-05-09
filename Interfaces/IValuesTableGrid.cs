@@ -3,7 +3,7 @@ using System.Data;
 namespace
 #if SunamoCollectionsValuesTableGrid
 SunamoCollectionsValuesTableGrid
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

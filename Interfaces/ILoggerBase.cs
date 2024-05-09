@@ -3,7 +3,7 @@ namespace
 SunamoCl
 #elif SunamoLogger
 SunamoLogger
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

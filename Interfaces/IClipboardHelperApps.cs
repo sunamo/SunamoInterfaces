@@ -1,7 +1,7 @@
 namespace
 #if SunamoClipboard
 SunamoClipboard
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;

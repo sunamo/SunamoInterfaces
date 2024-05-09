@@ -9,7 +9,7 @@ SunamoLogger
 SunamoShared
 #elif SunamoWinStd
 SunamoWinStd
-#else SunamoInterfacesInterfaces
+#else
 SunamoInterfacesInterfaces
 #endif
 ;
