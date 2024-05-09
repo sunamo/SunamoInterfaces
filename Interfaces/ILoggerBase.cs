@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCl
+SunamoCl
+#elif SunamoLogger
+SunamoLogger
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface ILoggerBase
 {

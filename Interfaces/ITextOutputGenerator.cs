@@ -1,4 +1,18 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCSharp
+SunamoCSharp
+#elif SunamoDictionary
+SunamoDictionary
+#elif SunamoFileSystem
+SunamoFileSystem
+#elif SunamoNumbers
+SunamoNumbers
+#elif SunamoTextOutputGenerator
+SunamoTextOutputGenerator
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface ITextOutputGenerator
 {

@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoDevCode
+SunamoDevCode
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IListBoxHelperItem
 {

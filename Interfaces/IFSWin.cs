@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoShared
+SunamoShared
+#elif SunamoWinStd
+SunamoWinStd
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IFSWin
 {

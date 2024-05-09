@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoShared
+SunamoShared
+#elif SunamoWinStd
+SunamoWinStd
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 /// <summary>
 /// Mám to ve rozhraní ale přišel jsem na to že to rozhraní být nemůže

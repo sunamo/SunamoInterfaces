@@ -1,4 +1,16 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoGitBashBuilder
+SunamoGitBashBuilder
+#elif SunamoPS
+SunamoPS
+#elif SunamoShared
+SunamoShared
+#elif SunamoTextOutputGenerator
+SunamoTextOutputGenerator
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface ITextBuilder
 {

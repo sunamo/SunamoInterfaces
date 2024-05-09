@@ -1,5 +1,15 @@
 
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoGitBashBuilder
+SunamoGitBashBuilder
+#elif SunamoPS
+SunamoPS
+#elif SunamoShared
+SunamoShared
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IGitBashBuilder
 {

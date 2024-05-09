@@ -1,4 +1,14 @@
-namespace SunamoInterfaces.Interfaces.SunamoPS;
+namespace
+#if SunamoPS
+SunamoPS
+#elif SunamoShared
+SunamoShared
+#elif SunamoWinStd
+SunamoWinStd
+#else SunamoInterfacesInterfacesSunamoPS
+SunamoInterfacesInterfacesSunamoPS
+#endif
+;
 
 //public interface IPowershellRunner
 //{

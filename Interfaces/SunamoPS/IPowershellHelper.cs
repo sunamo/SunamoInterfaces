@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces.SunamoPS;
+namespace
+#if SunamoPS
+SunamoPS
+#elif SunamoShared
+SunamoShared
+#else SunamoInterfacesInterfacesSunamoPS
+SunamoInterfacesInterfacesSunamoPS
+#endif
+;
 
 public interface IPowershellHelper
 {

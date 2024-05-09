@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoClipboard
+SunamoClipboard
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 
 

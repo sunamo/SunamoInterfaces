@@ -1,4 +1,14 @@
-﻿namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCl
+SunamoCl
+#elif SunamoPercentCalculator
+SunamoPercentCalculator
+#elif SunamoTextOutputGenerator
+SunamoTextOutputGenerator
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IPercentCalculator
 {

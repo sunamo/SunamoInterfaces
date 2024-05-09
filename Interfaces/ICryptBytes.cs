@@ -1,5 +1,11 @@
 
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCrypt
+SunamoCrypt
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 public interface ICryptBytes : ICrypt
 {
     List<byte> Decrypt(List<byte> v);

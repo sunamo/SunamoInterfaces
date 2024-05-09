@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCl
+SunamoCl
+#elif SunamoCrypt
+SunamoCrypt
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface ICrypt
 {

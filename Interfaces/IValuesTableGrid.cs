@@ -1,6 +1,12 @@
-﻿using System.Data;
+using System.Data;
 
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCollectionsValuesTableGrid
+SunamoCollectionsValuesTableGrid
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IValuesTableGrid<T>
 {

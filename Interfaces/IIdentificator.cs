@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCollectionsGeneric
+SunamoCollectionsGeneric
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IIdentificator
 {

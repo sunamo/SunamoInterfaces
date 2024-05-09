@@ -1,4 +1,12 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoFileSystem
+SunamoFileSystem
+#elif SunamoShared
+SunamoShared
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 /// <summary>
 /// musí být v sunamo protože ho tu potřebují

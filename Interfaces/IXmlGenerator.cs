@@ -1,7 +1,15 @@
 
 using System.Xml;
 
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoDevCode
+SunamoDevCode
+#elif SunamoXml
+SunamoXml
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IXmlGenerator
 {

@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoConverters
+SunamoConverters
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public interface IConvertShortcutFullName
 {

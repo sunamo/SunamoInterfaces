@@ -1,4 +1,16 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCl
+SunamoCl
+#elif SunamoCollectionsGeneric
+SunamoCollectionsGeneric
+#elif SunamoPS
+SunamoPS
+#elif SunamoShared
+SunamoShared
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 
 public class ProgressState
 {

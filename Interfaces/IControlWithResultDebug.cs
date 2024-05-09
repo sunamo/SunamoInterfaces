@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoShared
+SunamoShared
+#else SunamoInterfacesInterfaces
+SunamoInterfacesInterfaces
+#endif
+;
 using SunamoDelegates;
 
 

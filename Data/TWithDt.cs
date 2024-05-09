@@ -1,4 +1,10 @@
-namespace SunamoInterfaces.Data;
+namespace
+#if SunamoCompare
+SunamoCompare
+#else SunamoInterfacesData
+SunamoInterfacesData
+#endif
+;
 
 
 public class TWithDt<T> : ITWithDt<T>
