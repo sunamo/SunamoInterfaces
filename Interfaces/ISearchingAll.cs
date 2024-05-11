@@ -1,4 +1,4 @@
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;
 
 using System.Collections.Generic;/// <summary>
 /// Pokud chci n�co aplikovat na v�. dT, mus�m to vlo�it zde

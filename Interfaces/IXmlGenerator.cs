@@ -7,7 +7,7 @@ SunamoDevCode
 #elif SunamoXml
 SunamoXml
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

@@ -2,7 +2,7 @@ namespace
 #if SunamoFileSystem
 SunamoFileSystem
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

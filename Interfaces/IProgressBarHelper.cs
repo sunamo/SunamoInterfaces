@@ -4,7 +4,7 @@ SunamoFileSystem
 #elif SunamoShared
 SunamoShared
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

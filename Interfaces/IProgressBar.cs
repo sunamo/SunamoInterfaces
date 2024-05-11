@@ -6,7 +6,7 @@ SunamoFubuCsProjFile
 #elif SunamoShared
 SunamoShared
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

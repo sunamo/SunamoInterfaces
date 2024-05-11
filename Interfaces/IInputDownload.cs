@@ -2,7 +2,7 @@ namespace
 #if SunamoShared
 SunamoShared
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 public interface IInputDownload : IUri //IException,

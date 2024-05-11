@@ -2,7 +2,7 @@ namespace
 #if SunamoCompare
 SunamoCompare
 #else
-SunamoInterfacesData
+SunamoInterfaces
 #endif
 ;
 

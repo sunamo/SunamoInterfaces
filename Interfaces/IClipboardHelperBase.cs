@@ -5,7 +5,7 @@ SunamoCl
 #elif SunamoClipboard
     SunamoClipboard
 #else
-SunamoInterfaces.Interfaces
+SunamoInterfaces
 #endif
  ;
 public interface IClipboardHelperBase<String, ListString, Bool>

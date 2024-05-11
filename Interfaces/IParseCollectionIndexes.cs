@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;
 public interface IParseCollectionIndexes
 {
     /// <summary>

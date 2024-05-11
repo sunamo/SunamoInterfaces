@@ -6,7 +6,7 @@ SunamoCl
 #elif SunamoLogger
 SunamoLogger
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

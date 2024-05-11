@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;
 public interface IJsSerializerDynamic : IJsSerializer
 {
     string SerializeFromDynamic(dynamic item);

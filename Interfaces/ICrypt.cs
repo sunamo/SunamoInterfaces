@@ -4,7 +4,7 @@ SunamoCl
 #elif SunamoCrypt
 SunamoCrypt
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

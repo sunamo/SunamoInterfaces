@@ -6,7 +6,7 @@ SunamoPercentCalculator
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

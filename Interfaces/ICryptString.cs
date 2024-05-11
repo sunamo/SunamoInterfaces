@@ -3,7 +3,7 @@ namespace
 #if SunamoCrypt
 SunamoCrypt
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 public interface ICryptString

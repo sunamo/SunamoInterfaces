@@ -1,1 +1,1 @@
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;

@@ -1,4 +1,4 @@
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;
 using Newtonsoft.Json;
 
 public interface IJsSerializer

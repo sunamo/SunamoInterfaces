@@ -4,7 +4,7 @@ namespace
 #if SunamoCollectionsValuesTableGrid
 SunamoCollectionsValuesTableGrid
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

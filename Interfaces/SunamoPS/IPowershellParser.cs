@@ -2,7 +2,7 @@ namespace
 #if SunamoPS
 SunamoPS
 #else
-SunamoInterfacesInterfacesSunamoPS
+SunamoInterfaces
 #endif
 ;
 

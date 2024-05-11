@@ -1,4 +1,4 @@
-﻿namespace
+namespace
 #if SunamoCl
 SunamoCl
 #elif SunamoClipboard
@@ -10,7 +10,7 @@ SunamoShared
 #elif SunamoWinStd
 SunamoWinStd
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

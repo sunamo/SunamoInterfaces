@@ -1,4 +1,4 @@
-namespace SunamoInterfaces.Interfaces;
+namespace SunamoInterfaces;
 
 /// <summary>
 /// Must be in sunamo because is shared between MSSQl and SQL Server project

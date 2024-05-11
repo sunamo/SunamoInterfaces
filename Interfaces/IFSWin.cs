@@ -4,7 +4,7 @@ SunamoShared
 #elif SunamoWinStd
 SunamoWinStd
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 

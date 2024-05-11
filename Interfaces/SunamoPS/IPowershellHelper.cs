@@ -4,7 +4,7 @@ SunamoPS
 #elif SunamoShared
 SunamoShared
 #else
-SunamoInterfacesInterfacesSunamoPS
+SunamoInterfaces
 #endif
 ;
 

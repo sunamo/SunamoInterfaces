@@ -2,7 +2,7 @@ namespace
 #if SunamoDevCode
 SunamoDevCode
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 
