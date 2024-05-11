@@ -1,5 +1,13 @@
 
-namespace SunamoInterfaces.Interfaces;
+namespace
+#if SunamoCl
+SunamoCl
+#elif SunamoClipboard
+    SunamoClipboard
+#else
+SunamoInterfaces.Interfaces
+#endif
+ ;
 public interface IClipboardHelperBase<String, ListString, Bool>
 {
     String GetText();

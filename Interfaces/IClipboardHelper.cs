@@ -1,4 +1,4 @@
-namespace
+﻿namespace
 #if SunamoCl
 SunamoCl
 #elif SunamoClipboard
