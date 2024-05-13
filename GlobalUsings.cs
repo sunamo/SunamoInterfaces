@@ -6,7 +6,7 @@ global using System.Text;
 global using System.Collections;
 global using System.Threading.Tasks;
 global using System.Runtime.InteropServices;
-global using SunamoInterfaces.Interfaces;
+
 
 global using System.Xml.Linq;
 global using System.Net;
