@@ -8,8 +8,10 @@ using System.Threading.Tasks;
 namespace
 #if SunamoCollectionsGeneric
 SunamoCollectionsGeneric
+#elif SunamoInterfaces
+SunamoInterfaces
 #else
-    SunamoInterfaces.Interfaces
+SunamoInterfaces.Interfaces
 #endif
 ;
 

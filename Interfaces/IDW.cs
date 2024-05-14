@@ -1,4 +1,10 @@
-namespace SunamoInterfaces;
+namespace
+#if SunamoShared
+SunamoShared
+#else
+SunamoInterfaces
+#endif
+;
 
 public interface IDW
 {

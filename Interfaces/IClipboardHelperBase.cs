@@ -3,11 +3,11 @@ namespace
 #if SunamoCl
 SunamoCl
 #elif SunamoClipboard
-    SunamoClipboard
+SunamoClipboard
 #else
 SunamoInterfaces
 #endif
- ;
+;
 public interface IClipboardHelperBase<String, ListString, Bool>
 {
     String GetText();

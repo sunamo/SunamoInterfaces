@@ -1,4 +1,10 @@
-namespace SunamoInterfaces;
+namespace
+#if SunamoData
+SunamoData
+#else
+SunamoInterfaces
+#endif
+;
 
 public interface IParser
 {
