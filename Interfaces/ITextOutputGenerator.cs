@@ -1,6 +1,6 @@
 namespace
-#if SunamoCSharp
-SunamoCSharp
+#if SunamoDevCode
+SunamoDevCode
 #elif SunamoDictionary
 SunamoDictionary
 #elif SunamoFileSystem
@@ -9,6 +9,8 @@ SunamoFileSystem
 SunamoNumbers
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif

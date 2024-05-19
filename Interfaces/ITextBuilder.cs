@@ -7,6 +7,8 @@ SunamoPS
 SunamoShared
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif

@@ -1,6 +1,8 @@
 namespace
 #if SunamoData
 SunamoData
+#elif SunamoDateTime
+SunamoDateTime
 #else
 SunamoInterfaces
 #endif

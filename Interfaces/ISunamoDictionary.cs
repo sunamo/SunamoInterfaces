@@ -1,6 +1,10 @@
 namespace
 #if SunamoCollectionsGeneric
 SunamoCollectionsGeneric
+#elif SunamoCrypt
+SunamoCrypt
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif

@@ -6,6 +6,8 @@ SunamoGitBashBuilder
 SunamoPS
 #elif SunamoShared
 SunamoShared
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif

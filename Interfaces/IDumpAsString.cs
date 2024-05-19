@@ -1,6 +1,8 @@
 namespace
 #if SunamoCollectionWithoutDuplicates
 SunamoCollectionWithoutDuplicates
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif

@@ -5,6 +5,8 @@ SunamoCl
 SunamoPercentCalculator
 #elif SunamoTextOutputGenerator
 SunamoTextOutputGenerator
+#elif SunamoDevCode
+SunamoDevCode
 #else
 SunamoInterfaces
 #endif
