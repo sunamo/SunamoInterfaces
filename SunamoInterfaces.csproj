@@ -9,33 +9,6 @@
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.58" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-    <Compile Include="..\SunamoValues\Consts.cs" Link="_linked\SunamoValues\Consts.cs" />
-    <Compile Include="..\SunamoExceptions\OnlyInSE\Exceptions.cs" Link="_linked\SunamoExceptions\OnlyInSE\Exceptions.cs" />
-    <Compile Include="..\SunamoExceptions\OnlyInSE\TranslateAble.cs" Link="_linked\SunamoExceptions\OnlyInSE\TranslateAble.cs" />
-    <Compile Include="..\SunamoExceptions\_AddedToAllCsproj\SHSunamoExceptions.cs" Link="_linked\SunamoExceptions\_AddedToAllCsproj\SHSunamoExceptions.cs" />
-    <Compile Include="..\SunamoExceptions\_AddedToAllCsproj\CASunamoExceptions.cs" Link="_linked\SunamoExceptions\_AddedToAllCsproj\CASunamoExceptions.cs" />
-    <Compile Include="..\SunamoValues\AllStrings.cs" Link="_linked\SunamoValues\AllStrings.cs" />
-    <Compile Include="..\SunamoValues\AllChars.cs" Link="_linked\SunamoValues\AllChars.cs" />
-    <Compile Include="..\SunamoExceptions\OnlyInSE\ThrowEx.cs" Link="_linked\SunamoExceptions\OnlyInSE\ThrowEx.cs" />
-    <Compile Include="..\SunamoExceptions\OnlyInSE\Exc.cs" Link="_linked\SunamoExceptions\OnlyInSE\Exc.cs" />
-    <Compile Include="..\SunamoExceptions\OnlyInSE\Types.cs" Link="_linked\SunamoExceptions\OnlyInSE\Types.cs" />
-    <Compile Include="..\SunamoXlfKeys\XlfKeys.cs" Link="_linked\SunamoXlfKeys\XlfKeys.cs" />
-    <Compile Include="..\SunamoDelegates\VoidBoolNullable.cs" Link="_linked\SunamoDelegates\VoidBoolNullable.cs" />
-    <Compile Include="..\SunamoEnums\Enums\DialogResult.cs" Link="_linked\SunamoEnums\Enums\DialogResult.cs" />
-    <Compile Include="..\SunamoShared\Database\SqlDbType2.cs" Link="_linked\SunamoShared\Database\SqlDbType2.cs" />
-    <Compile Include="..\SunamoEnums\Enums\Signed.cs" Link="_linked\SunamoEnums\Enums\Signed.cs" />
-    <Compile Include="..\SunamoArgs\MSSloupecDBArgs.cs" Link="_linked\SunamoArgs\MSSloupecDBArgs.cs" />
-    <Compile Include="..\SunamoEnums\Enums\TwoState.cs" Link="_linked\SunamoEnums\Enums\TwoState.cs" />
-    <Compile Include="..\SunamoArgs\ExternalLoginResult.cs" Link="_linked\SunamoArgs\ExternalLoginResult.cs" />
-    <Compile Include="..\SunamoParsing\TryParse.cs" Link="_linked\SunamoParsing\TryParse.cs" />
-    <Compile Include="..\SunamoParsing\Parse.cs" Link="_linked\SunamoParsing\Parse.cs" />
-    <Compile Include="..\SunamoDelegates\VoidObject.cs" Link="_linked\SunamoDelegates\VoidObject.cs" />
-    <Compile Include="..\SunamoEnums\Enums\FontWeight2.cs" Link="_linked\SunamoEnums\Enums\FontWeight2.cs" />
-    <Compile Include="..\SunamoArgs\ValidateData.cs" Link="_linked\SunamoArgs\ValidateData.cs" />
-    <Compile Include="..\SunamoDelegates\VoidVoid.cs" Link="_linked\SunamoDelegates\VoidVoid.cs" />
-    <Compile Include="..\SunamoEnums\Enums\CommandWithPath.cs" Link="_linked\SunamoEnums\Enums\CommandWithPath.cs" />
-    <Compile Include="..\SunamoArgs\PsInvokeArgs.cs" Link="_linked\SunamoArgs\PsInvokeArgs.cs" />
-    <Compile Include="..\SunamoArgs\InvokeProcessArgs.cs" Link="_linked\SunamoArgs\InvokeProcessArgs.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\Essentials\" />
