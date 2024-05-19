@@ -1,6 +1,8 @@
 namespace
 #if SunamoFtp
 SunamoFtp
+#elif SunamoFluentFtp
+SunamoFluentFtp
 #else
 SunamoInterfaces
 #endif
