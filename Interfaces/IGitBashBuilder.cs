@@ -1,4 +1,3 @@
-
 namespace
 #if SunamoGitBashBuilder
 SunamoGitBashBuilder
@@ -12,11 +11,9 @@ SunamoDevCode
 SunamoInterfaces
 #endif
 ;
-
 public interface IGitBashBuilder
 {
     List<string> Commands { get; }
-
     void Add(string v);
     void AddNewRemote(string s);
     void Append(string text);

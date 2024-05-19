@@ -7,7 +7,6 @@ SunamoWinStd
 SunamoInterfaces
 #endif
 ;
-
 public interface IFSWin
 {
     void DeleteFileMaybeLocked(string s);

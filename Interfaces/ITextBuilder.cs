@@ -13,7 +13,6 @@ SunamoDevCode
 SunamoInterfaces
 #endif
 ;
-
 public interface ITextBuilder
 {
     bool CanUndo { get; set; }

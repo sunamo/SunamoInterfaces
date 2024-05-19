@@ -7,7 +7,6 @@ SunamoShared
 SunamoInterfaces
 #endif
 ;
-
 /// <summary>
 /// musí být v sunamo protože ho tu potřebují
 /// ale v sunamo zase není DispatcherObject

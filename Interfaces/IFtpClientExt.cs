@@ -5,7 +5,6 @@ SunamoFtp
 SunamoInterfaces
 #endif
 ;
-
 public interface IFtpClientExt
 {
     bool IsInFormatOfAlbum(string folderName);

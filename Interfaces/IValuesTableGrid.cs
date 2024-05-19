@@ -1,5 +1,4 @@
 using System.Data;
-
 namespace
 #if SunamoCollectionsValuesTableGrid
 SunamoCollectionsValuesTableGrid
@@ -7,7 +6,6 @@ SunamoCollectionsValuesTableGrid
 SunamoInterfaces
 #endif
 ;
-
 public interface IValuesTableGrid<T>
 {
     bool IsAllInColumn(int i, T value);

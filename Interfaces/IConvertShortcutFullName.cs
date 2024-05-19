@@ -5,7 +5,6 @@ SunamoConverters
 SunamoInterfaces
 #endif
 ;
-
 public interface IConvertShortcutFullName
 {
     string FromShortcut(string shortcut);

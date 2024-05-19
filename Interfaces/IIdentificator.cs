@@ -5,9 +5,7 @@ SunamoCollectionsGeneric
 SunamoInterfaces
 #endif
 ;
-
 public interface IIdentificator
 {
     object Id { get; set; }
 }
-

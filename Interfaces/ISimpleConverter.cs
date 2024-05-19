@@ -5,7 +5,6 @@ SunamoConverters
 SunamoInterfaces
 #endif
 ;
-
 public interface ISimpleConverter : ISimpleConverterT<string, string>
 {
 }

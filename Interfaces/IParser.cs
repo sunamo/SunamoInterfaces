@@ -7,7 +7,6 @@ SunamoDateTime
 SunamoInterfaces
 #endif
 ;
-
 public interface IParser
 {
     void Parse(string co);

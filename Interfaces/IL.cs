@@ -7,7 +7,6 @@ SunamoEnums
 SunamoInterfaces
 #endif
 ;
-
 public interface IL<T> : IList<T>
 {
 }

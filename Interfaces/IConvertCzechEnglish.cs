@@ -5,7 +5,6 @@ SunamoConverters
 SunamoInterfaces
 #endif
 ;
-
 public interface IConvertCzechEnglish
 {
     string ToCzech(string english);

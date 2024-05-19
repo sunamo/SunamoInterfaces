@@ -15,12 +15,10 @@ SunamoDevCode
 SunamoInterfaces
 #endif
 ;
-
 public interface ITextOutputGenerator
 {
     void PairBullet(string key, string v);
     string prependEveryNoWhite { get; set; }
-
     void Append(string text);
     void AppendFormat(string text, params string[] p);
     void AppendLine();

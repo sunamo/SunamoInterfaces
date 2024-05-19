@@ -5,7 +5,6 @@ SunamoConverters
 SunamoInterfaces
 #endif
 ;
-
 public interface IConvertNumberString
 {
     int ToNumber(string s);

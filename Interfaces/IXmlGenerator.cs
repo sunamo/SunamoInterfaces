@@ -1,6 +1,4 @@
-
 using System.Xml;
-
 namespace
 #if SunamoDevCode
 SunamoDevCode
@@ -10,7 +8,6 @@ SunamoXml
 SunamoInterfaces
 #endif
 ;
-
 public interface IXmlGenerator
 {
     void AppendLine();

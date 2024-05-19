@@ -5,7 +5,6 @@ SunamoShared
 SunamoInterfaces
 #endif
 ;
-
 public interface IDW
 {
     string SelectOfFolder(string rootFolder);

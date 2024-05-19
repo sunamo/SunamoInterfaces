@@ -5,7 +5,6 @@ SunamoPS
 SunamoInterfaces
 #endif
 ;
-
 public interface IPowershellParser
 {
     List<string> ParseToParts(string d, string charWhichIsNotContained);

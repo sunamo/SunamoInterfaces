@@ -5,7 +5,6 @@ SunamoCompare
 SunamoInterfaces
 #endif
 ;
-
 public interface ITWithDt<T>
 {
     T t { get; set; }

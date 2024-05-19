@@ -5,7 +5,6 @@ SunamoDevCode
 SunamoInterfaces
 #endif
 ;
-
 public interface IListBoxHelperItem
 {
     string RunOne { get; }

@@ -7,7 +7,6 @@ SunamoShared
 SunamoInterfaces
 #endif
 ;
-
 public interface IPowershellHelper
 {
 #if ASYNC

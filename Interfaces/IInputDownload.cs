@@ -7,5 +7,4 @@ SunamoInterfaces
 ;
 public interface IInputDownload : IUri //IException,
 {
-
 }

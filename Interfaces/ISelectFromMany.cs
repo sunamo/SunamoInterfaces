@@ -5,7 +5,6 @@ SunamoFileSystem
 SunamoInterfaces
 #endif
 ;
-
 public interface ISelectFromMany<Data>
 {
     void AddControl(Data data, bool b);

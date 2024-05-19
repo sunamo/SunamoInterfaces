@@ -9,7 +9,6 @@ SunamoTextOutputGenerator
 SunamoInterfaces
 #endif
 ;
-
 public interface INpmBashBuilder
 {
     void I(string args = null);

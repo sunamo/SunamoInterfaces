@@ -7,7 +7,6 @@ SunamoCrypt
 SunamoInterfaces
 #endif
 ;
-
 public interface ICrypt
 {
     List<byte> s { set; get; }

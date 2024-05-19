@@ -5,7 +5,6 @@ SunamoCollectionsGeneric
 SunamoInterfaces
 #endif
 ;
-
 public interface IStatusBroadcaster
 {
     event Action<object, Object[]> NewStatus;

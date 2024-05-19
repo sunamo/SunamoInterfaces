@@ -5,9 +5,6 @@ SunamoShared
 SunamoInterfaces
 #endif
 ;
-
-
-
 [ComVisible(true)]
 [InterfaceType(ComInterfaceType.InterfaceIsDual)]
 public interface IControlWithResultDebug : IControlWithResult

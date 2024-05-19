@@ -1,4 +1,3 @@
-
 namespace
 #if SunamoCrypt
 SunamoCrypt

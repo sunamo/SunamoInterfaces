@@ -7,8 +7,6 @@ SunamoShared
 SunamoInterfaces
 #endif
 ;
-
-
 public interface IPowershellBuilder
 {
     INpmBashBuilder Npm { get; set; }

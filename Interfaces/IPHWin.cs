@@ -7,7 +7,6 @@ SunamoWinStd
 SunamoInterfaces
 #endif
 ;
-
 /// <summary>
 /// Mám to ve rozhraní ale přišel jsem na to že to rozhraní být nemůže
 ///
