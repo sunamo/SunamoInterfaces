@@ -9,7 +9,7 @@ SunamoCollectionsGeneric
 #elif SunamoInterfaces
 SunamoInterfaces
 #else
-SunamoInterfaces.Interfaces
+SunamoInterfaces
 #endif
 ;
 public interface IIdentificatorT<T>

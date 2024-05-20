@@ -11,7 +11,7 @@ SunamoGitBashBuilder
 #elif SunamoInterfaces
 SunamoInterfaces
 #else
-SunamoInterfacesInterfaces
+SunamoInterfaces
 #endif
 ;
 public interface ITypedLoggerBase
