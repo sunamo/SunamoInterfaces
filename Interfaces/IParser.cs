@@ -3,6 +3,8 @@ namespace
 SunamoData
 #elif SunamoDateTime
 SunamoDateTime
+#elif SunamoGoogleSheets
+SunamoGoogleSheets
 #else
 SunamoInterfaces
 #endif

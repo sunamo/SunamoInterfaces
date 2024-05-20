@@ -7,6 +7,8 @@ SunamoCollectionsGeneric
 SunamoPS
 #elif SunamoShared
 SunamoShared
+#elif SunamoWinStd
+SunamoWinStd
 #else
 SunamoInterfaces
 #endif

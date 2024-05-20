@@ -4,6 +4,8 @@ namespace
 SunamoDevCode
 #elif SunamoXml
 SunamoXml
+#elif SunamoWikipedia
+SunamoWikipedia
 #else
 SunamoInterfaces
 #endif

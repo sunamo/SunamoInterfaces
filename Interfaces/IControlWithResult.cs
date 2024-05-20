@@ -1,5 +1,10 @@
-
-namespace SunamoInterfaces;
+namespace
+#if SunamoShared
+SunamoShared
+#else
+SunamoInterfaces
+#endif
+;
 [ComVisible(true)]
 [InterfaceType(ComInterfaceType.InterfaceIsDual)]
 /// <summary>
@@ -17,7 +22,6 @@ public interface IControlWithResult
     /// Use for attaching AttachChangeDialogResult
     /// </summary>
     event VoidBoolNullable ChangeDialogResult;
-
     /// <summary>
     /// Do Set zapiš jen ChangeDialogResult(value);
     /// It is construction from WF apps and protect if handler will be null.
@@ -27,6 +31,5 @@ public interface IControlWithResult
     //ButtonBase AcceptButton { get; }
     void Accept(object input);
     void FocusOnMainElement();
-
     //bool IsAttachedChangeDialogResult;
 }

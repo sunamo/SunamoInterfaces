@@ -10,6 +10,7 @@ SunamoInterfaces
 public interface IPowershellBuilder
 {
     INpmBashBuilder Npm { get; set; }
+    IGitBashBuilder Git { get; set; }
     void AddArg(string argName, string argValue);
     void AddRaw(string v);
     void AddRawLine(string v);
