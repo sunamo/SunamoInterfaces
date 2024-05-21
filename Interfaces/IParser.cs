@@ -5,6 +5,8 @@ SunamoData
 SunamoDateTime
 #elif SunamoGoogleSheets
 SunamoGoogleSheets
+#elif SunamoGitBashBuilder
+SunamoGitBashBuilder
 #else
 SunamoInterfaces
 #endif

@@ -30,6 +30,7 @@
     <Compile Include="..\SunamoDelegates\VoidBoolNullable.cs" Link="_linked\SunamoDelegates\VoidBoolNullable.cs" />
     <Compile Include="..\SunamoEnums\Enums\FontWeight2.cs" Link="_linked\SunamoEnums\Enums\FontWeight2.cs" />
     <Compile Include="..\SunamoArgs\MSSloupecDBArgs.cs" Link="_linked\SunamoArgs\MSSloupecDBArgs.cs" />
+    <Compile Include="..\SunamoXlfKeys\XlfKeys.cs" Link="_linked\SunamoXlfKeys\XlfKeys.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\Essentials\" />
