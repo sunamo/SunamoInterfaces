@@ -1,14 +1,14 @@
 namespace SunamoInterfaces;
 
 
-public class MSSloupecDBArgs
+internal class MSSloupecDBArgs
 {
-    public string nazev;
-    public bool primaryKey;
-    public string referencesTable;
-    public string referencesColumn;
-    public bool mustBeUnique;
-    public bool canBeNull;
-    public Signed signed;
-    public bool identityIncrementBy1;
+    internal string nazev;
+    internal bool primaryKey;
+    internal string referencesTable;
+    internal string referencesColumn;
+    internal bool mustBeUnique;
+    internal bool canBeNull;
+    internal Signed signed;
+    internal bool identityIncrementBy1;
 }
