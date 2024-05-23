@@ -5,14 +5,14 @@ namespace SunamoInterfaces;
 /// Jakékoliv změny v této složce musíš projevit i v stejně pojmenované třídě v sunamo projektu
 /// </summary>
 //[Preserve]
-internal class ExternalLoginResult //: ExternalLoginResult
+public class ExternalLoginResult //: ExternalLoginResult
 {
-    internal int IdUser
+    public int IdUser
     {
         get;
         set;
     }
-    internal string Sc
+    public string Sc
     {
         get;
         set;
@@ -20,7 +20,7 @@ internal class ExternalLoginResult //: ExternalLoginResult
     /// <summary>
     /// int.MaxValue for never asking
     /// </summary>
-    internal string P1
+    public string P1
     {
         get;
         set;

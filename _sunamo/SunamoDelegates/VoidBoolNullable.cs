@@ -1,4 +1,4 @@
 namespace SunamoInterfaces;
 
 
-internal delegate void VoidBoolNullable(bool? b);
+public delegate void VoidBoolNullable(bool? b);
