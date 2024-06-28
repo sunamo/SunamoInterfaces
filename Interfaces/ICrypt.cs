@@ -1,12 +1,3 @@
-namespace
-#if SunamoCl
-SunamoCl
-#elif SunamoCrypt
-SunamoCrypt
-#else
-SunamoInterfaces
-#endif
-;
 public interface ICrypt
 {
     List<byte> s { set; get; }

@@ -1,15 +1,4 @@
 using System.Xml;
-namespace
-#if SunamoDevCode
-SunamoDevCode
-#elif SunamoXml
-SunamoXml
-#elif SunamoWikipedia
-SunamoWikipedia
-#else
-SunamoInterfaces
-#endif
-;
 public interface IXmlGenerator
 {
     void AppendLine();

@@ -1,18 +1,3 @@
-namespace
-#if SunamoCl
-SunamoCl
-#elif SunamoCollectionsGeneric
-SunamoCollectionsGeneric
-#elif SunamoPS
-SunamoPS
-#elif SunamoShared
-SunamoShared
-#elif SunamoWinStd
-SunamoWinStd
-#else
-SunamoInterfaces
-#endif
-;
 public class ProgressState
 {
     public bool isRegistered { get; set; } = false;

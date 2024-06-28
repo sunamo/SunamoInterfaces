@@ -1,12 +1,3 @@
-namespace
-#if SunamoShared
-SunamoShared
-#elif SunamoWinStd
-SunamoWinStd
-#else
-SunamoInterfaces
-#endif
-;
 /// <summary>
 /// Mám to ve rozhraní ale přišel jsem na to že to rozhraní být nemůže
 ///

@@ -1,13 +1,4 @@
 using System.Collections;
-namespace
-#if SunamoCl
-SunamoCl
-#elif SunamoLogger
-SunamoLogger
-#else
-SunamoInterfaces
-#endif
-;
 public interface ILoggerBase
 {
     void ClipboardOrDebug(string v, params string[] args);

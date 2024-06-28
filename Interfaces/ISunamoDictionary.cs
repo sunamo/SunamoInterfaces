@@ -1,14 +1,3 @@
-namespace
-#if SunamoCollectionsGeneric
-SunamoCollectionsGeneric
-#elif SunamoCrypt
-SunamoCrypt
-#elif SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface ISunamoDictionary<T, U>
 {
     U this[T key] { get; set; }

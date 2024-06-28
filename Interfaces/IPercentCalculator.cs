@@ -1,18 +1,3 @@
-namespace
-#if SunamoCl
-SunamoCl
-#elif SunamoPercentCalculator
-SunamoPercentCalculator
-#elif SunamoTextOutputGenerator
-SunamoTextOutputGenerator
-#elif SunamoDevCode
-SunamoDevCode
-#elif SunamoShared
-SunamoShared
-#else
-SunamoInterfaces
-#endif
-;
 public interface IPercentCalculator
 {
     double _overallSum { get; set; }

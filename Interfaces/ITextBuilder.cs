@@ -1,18 +1,3 @@
-namespace
-#if SunamoGitBashBuilder
-SunamoGitBashBuilder
-#elif SunamoPS
-SunamoPS
-#elif SunamoShared
-SunamoShared
-#elif SunamoTextOutputGenerator
-SunamoTextOutputGenerator
-#elif SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface ITextBuilder
 {
     bool CanUndo { get; set; }

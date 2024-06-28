@@ -1,12 +1,3 @@
-namespace
-#if SunamoPS
-SunamoPS
-#elif SunamoShared
-SunamoShared
-#else
-SunamoInterfaces
-#endif
-;
 public interface IPowershellHelper
 {
 #if ASYNC

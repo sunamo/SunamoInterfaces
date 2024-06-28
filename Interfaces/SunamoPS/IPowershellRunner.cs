@@ -1,14 +1,3 @@
-namespace
-#if SunamoPS
-SunamoPS
-#elif SunamoShared
-SunamoShared
-#elif SunamoWinStd
-SunamoWinStd
-#else
-SunamoInterfaces
-#endif
-;
 //public interface IPowershellRunner
 //{
 //    ProgressState clpb { get; set; }

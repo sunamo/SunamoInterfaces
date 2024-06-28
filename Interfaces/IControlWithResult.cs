@@ -1,10 +1,3 @@
-namespace
-#if SunamoShared
-SunamoShared
-#else
-SunamoInterfaces
-#endif
-;
 [ComVisible(true)]
 [InterfaceType(ComInterfaceType.InterfaceIsDual)]
 /// <summary>

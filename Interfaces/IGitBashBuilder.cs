@@ -1,16 +1,3 @@
-namespace
-#if SunamoGitBashBuilder
-SunamoGitBashBuilder
-#elif SunamoPS
-SunamoPS
-#elif SunamoShared
-SunamoShared
-#elif SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface IGitBashBuilder
 {
     List<string> Commands { get; }

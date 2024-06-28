@@ -1,10 +1,3 @@
-namespace
-#if SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface IListBoxHelperItem
 {
     string RunOne { get; }

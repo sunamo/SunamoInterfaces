@@ -1,20 +1,3 @@
-namespace
-#if SunamoDevCode
-SunamoDevCode
-#elif SunamoDictionary
-SunamoDictionary
-#elif SunamoFileSystem
-SunamoFileSystem
-#elif SunamoNumbers
-SunamoNumbers
-#elif SunamoTextOutputGenerator
-SunamoTextOutputGenerator
-#elif SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface ITextOutputGenerator
 {
     void PairBullet(string key, string v);

@@ -1,16 +1,3 @@
-namespace
-#if SunamoCl
-SunamoCl
-#elif SunamoFubuCsProjFile
-SunamoFubuCsProjFile
-#elif SunamoShared
-SunamoShared
-#elif SunamoDevCode
-SunamoDevCode
-#else
-SunamoInterfaces
-#endif
-;
 public interface IProgressBar
 {
     bool isRegistered { get; set; }

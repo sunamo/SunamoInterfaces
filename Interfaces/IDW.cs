@@ -1,10 +1,3 @@
-namespace
-#if SunamoShared
-SunamoShared
-#else
-SunamoInterfaces
-#endif
-;
 public interface IDW
 {
     string SelectOfFolder(string rootFolder);
