@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 using System.Data;
 public interface IValuesTableGrid<T>
 {

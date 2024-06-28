@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IPowershellHelper
 {
 #if ASYNC

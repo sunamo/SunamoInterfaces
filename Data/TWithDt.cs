@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public class TWithDt<T> : ITWithDt<T>
 {
     public T t { get; set; } = default;

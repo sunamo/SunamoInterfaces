@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IConvertCzechEnglish
 {
     string ToCzech(string english);

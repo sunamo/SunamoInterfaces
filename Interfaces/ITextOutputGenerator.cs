@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface ITextOutputGenerator
 {
     void PairBullet(string key, string v);

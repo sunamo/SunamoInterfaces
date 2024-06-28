@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IConvertConvention
 {
     string FromConvention(string p);

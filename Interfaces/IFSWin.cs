@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IFSWin
 {
     void DeleteFileMaybeLocked(string s);

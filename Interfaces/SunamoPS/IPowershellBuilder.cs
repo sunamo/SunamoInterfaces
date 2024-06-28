@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IPowershellBuilder
 {
     INpmBashBuilder Npm { get; set; }

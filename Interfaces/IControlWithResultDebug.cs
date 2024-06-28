@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 [ComVisible(true)]
 [InterfaceType(ComInterfaceType.InterfaceIsDual)]
 public interface IControlWithResultDebug : IControlWithResult

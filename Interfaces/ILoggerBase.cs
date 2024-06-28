@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 using System.Collections;
 public interface ILoggerBase
 {

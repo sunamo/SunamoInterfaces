@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface ICrypt
 {
     List<byte> s { set; get; }

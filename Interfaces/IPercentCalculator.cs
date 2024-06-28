@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IPercentCalculator
 {
     double _overallSum { get; set; }

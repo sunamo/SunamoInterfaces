@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 /// <summary>
 ///     Must be in sunamo, is used in win and apps
 /// </summary>

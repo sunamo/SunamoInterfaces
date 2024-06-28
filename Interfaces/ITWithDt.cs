@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface ITWithDt<T>
 {
     T t { get; set; }

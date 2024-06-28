@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IConvertShortcutFullName
 {
     string FromShortcut(string shortcut);

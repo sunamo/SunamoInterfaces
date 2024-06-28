@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IListBoxHelperItem
 {
     string RunOne { get; }

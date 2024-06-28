@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IStatusBroadcaster
 {
     event Action<object, Object[]> NewStatus;

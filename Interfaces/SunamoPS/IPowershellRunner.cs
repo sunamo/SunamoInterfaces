@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 //public interface IPowershellRunner
 //{
 //    ProgressState clpb { get; set; }

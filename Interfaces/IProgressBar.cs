@@ -1,3 +1,5 @@
+
+namespace SunamoInterfaces;
 public interface IProgressBar
 {
     bool isRegistered { get; set; }
