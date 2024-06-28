@@ -1,4 +1,4 @@
 namespace SunamoInterfaces;
 
 
-public delegate void VoidObject(object o);
+internal delegate void VoidObject(object o);

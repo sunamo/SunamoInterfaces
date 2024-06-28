@@ -1,7 +1,7 @@
 namespace SunamoInterfaces;
 
 
-public enum CommandWithPath
+internal enum CommandWithPath
 {
     dos2unix
 }
