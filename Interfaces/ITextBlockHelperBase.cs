@@ -2,7 +2,7 @@ namespace SunamoInterfaces;
 
 public interface ITextBlockHelperBase<FontWeight, Italic, Inline, Bold, Run, InlineUIContainer, FontArgs>
 {
-    FontWeight GetFontWeight(FontWeight2 fontWeight);
+    FontWeight GetFontWeight(FontWeights fontWeight);
     Italic GetItalic(string run, FontArgs fa);
     Inline GetBullet(string p, FontArgs fa);
     Bold GetError(string p, FontArgs fa);
