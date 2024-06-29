@@ -13,5 +13,5 @@ public interface IResult
     /// <summary>
     /// Dont use, instead of this IControlWithResult
     /// </summary>
-    event VoidObject Finished;
+    event Action<object> Finished;
 }

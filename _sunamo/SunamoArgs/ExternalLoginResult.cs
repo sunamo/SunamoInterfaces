@@ -5,7 +5,7 @@ namespace SunamoInterfaces;
 /// Jakékoliv změny v této složce musíš projevit i v stejně pojmenované třídě v sunamo projektu
 /// </summary>
 //[Preserve]
-internal class ExternalLoginResult //: ExternalLoginResult
+public class ExternalLoginResult //: ExternalLoginResult
 {
     internal int IdUser
     {

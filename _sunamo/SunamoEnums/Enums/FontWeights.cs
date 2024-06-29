@@ -1,7 +1,7 @@
 namespace SunamoInterfaces;
 
 
-internal enum FontWeights : ushort
+public enum FontWeights : ushort
 {
     light = 100,
     lighter = 250,

@@ -4,7 +4,7 @@ namespace SunamoInterfaces;
 /// <summary>
 ///     Must be in shared because desktop reference PathEditor and therefore this class cant be in desktop
 /// </summary>
-internal class ValidateData
+public class ValidateData
 {
     internal static readonly ValidateData Default = new ValidateData();
     internal bool allowEmpty = false;
