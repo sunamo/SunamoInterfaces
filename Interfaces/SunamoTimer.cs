@@ -7,7 +7,7 @@ public class SunamoTimer
 {
     protected System.Timers.Timer t = null;
     Action a = null;
-    public event VoidVoid Tick;
+    public event Action Tick;
 
     public SunamoTimer(int ms, Action a, bool runImmediately)
     {
