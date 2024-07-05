@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces._sunamo.SunamoArgs;
 
 
 internal class InvokeProcessArgs

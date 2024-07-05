@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 public class ProgressState
 {
     public bool isRegistered { get; set; } = false;

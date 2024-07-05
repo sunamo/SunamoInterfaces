@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
 /// M pro zakladni operace s registry.

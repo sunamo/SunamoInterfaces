@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 /// <summary>
 /// Mám to ve rozhraní ale přišel jsem na to že to rozhraní být nemůže
 ///

@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 public interface IDW
 {
     string SelectOfFolder(string rootFolder);

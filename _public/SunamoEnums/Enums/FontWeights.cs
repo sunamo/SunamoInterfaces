@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces._public.SunamoEnums.Enums;
 
 
 public enum FontWeights : ushort

@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces._sunamo.SunamoEnums.Enums;
 
 
 /// <summary>

@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 public interface IConvertNumberString
 {
     int ToNumber(string s);

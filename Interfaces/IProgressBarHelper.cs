@@ -1,5 +1,5 @@
 
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 /// <summary>
 /// musí být v sunamo protože ho tu potřebují
 /// ale v sunamo zase není DispatcherObject

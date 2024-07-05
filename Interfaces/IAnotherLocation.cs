@@ -1,4 +1,4 @@
-namespace SunamoInterfaces;
+namespace SunamoInterfaces.Interfaces;
 
 public interface IAnotherLocation<T, U>
 {
