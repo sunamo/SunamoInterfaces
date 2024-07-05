@@ -24,3 +24,8 @@ global using SunamoInterfaces._public.SunamoEnums.Enums;
 global using SunamoInterfaces._sunamo.SunamoEnums.Enums;
 global using SunamoInterfaces._sunamo.SunamoExceptions.OnlyInSE;
 global using SunamoInterfaces._sunamo.SunamoExceptions._AddedToAllCsproj;
+global using HtmlAgilityPack;
+global using Newtonsoft.Json;
+global using System.Data;
+global using System.Diagnostics;
+global using System.Xml;

@@ -1,6 +1,4 @@
-
 namespace SunamoInterfaces.Interfaces;
-using System.Data;
 public interface IValuesTableGrid<T>
 {
     bool IsAllInColumn(int i, T value);

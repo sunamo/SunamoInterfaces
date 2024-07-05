@@ -1,4 +1,3 @@
-
 namespace SunamoInterfaces.Interfaces;
 /// <summary>
 /// musí být v sunamo protože ho tu potřebují

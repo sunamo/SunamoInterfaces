@@ -1,4 +1,3 @@
-
 namespace SunamoInterfaces.Interfaces.SunamoPS;
 public interface IPowershellParser
 {

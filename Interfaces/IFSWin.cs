@@ -1,4 +1,3 @@
-
 namespace SunamoInterfaces.Interfaces;
 public interface IFSWin
 {
