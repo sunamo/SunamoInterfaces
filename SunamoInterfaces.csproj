@@ -11,18 +11,20 @@
     <RepositoryUrl>https://github.com/sunamo/SunamoInterfaces.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="HtmlAgilityPack" Version="1.11.58" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <None Include="readme.md" Pack="True" PackagePath="." />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Interfaces\Essentials\" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DefineConstants>$(DefineConstants);ASYNC;SunamoInterfaces</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC;SunamoInterfaces;SunamoInterfaces.csproj</DefineConstants>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DefineConstants>$(DefineConstants);ASYNC;SunamoInterfaces</DefineConstants>
+    <DefineConstants>$(DefineConstants);ASYNC;SunamoInterfaces;SunamoInterfaces.csproj</DefineConstants>
   </PropertyGroup>
 </Project>
