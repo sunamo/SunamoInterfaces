@@ -1,4 +1,5 @@
 namespace SunamoInterfaces.Interfaces;
+
 public interface ISunamoDictionary<T, U>
 {
     U this[T key] { get; set; }

@@ -1,14 +1,13 @@
 namespace SunamoInterfaces._sunamo.SunamoArgs;
 
-
 internal class MSSloupecDBArgs
 {
+    internal bool canBeNull;
+    internal bool identityIncrementBy1;
+    internal bool mustBeUnique;
     internal string nazev;
     internal bool primaryKey;
-    internal string referencesTable;
     internal string referencesColumn;
-    internal bool mustBeUnique;
-    internal bool canBeNull;
+    internal string referencesTable;
     internal Signed signed;
-    internal bool identityIncrementBy1;
 }

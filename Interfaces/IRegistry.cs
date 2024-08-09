@@ -1,7 +1,7 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
-/// M pro zakladni operace s registry.
+///     M pro zakladni operace s registry.
 /// </summary>
 public interface IRegistry
 {

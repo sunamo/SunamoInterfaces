@@ -1,7 +1,7 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
-/// MainWindow_PreviewKeyDown
+///     MainWindow_PreviewKeyDown
 /// </summary>
 /// <typeparam name="KeyArg"></typeparam>
 public interface IKeysHandler<KeyArg>

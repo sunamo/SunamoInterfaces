@@ -1,4 +1,5 @@
 namespace SunamoInterfaces.Interfaces;
+
 public interface IGitBashBuilder
 {
     List<string> Commands { get; }

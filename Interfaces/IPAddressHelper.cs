@@ -1,9 +1,11 @@
+using System.Net.Sockets;
+
 namespace SunamoInterfaces.Interfaces;
 
 public class IPAddressHelper
 {
     /// <summary>
-    /// Vrátí null pokud cokoliv nebude sedět
+    ///     Vrátí null pokud cokoliv nebude sedět
     /// </summary>
     /// <param name="ip2"></param>
     public static byte[] GetIPAddressInArray(string ip2)
@@ -13,23 +15,20 @@ public class IPAddressHelper
         if (ips.Count == 4)
         {
             ip = new byte[4];
-            for (int i = 0; i < 4; i++)
+            for (var i = 0; i < 4; i++)
             {
                 byte b = 0;
-                if (!byte.TryParse(ips[i], out b))
-                {
-                    return null;
-                }
+                if (!byte.TryParse(ips[i], out b)) return null;
                 ip[i] = b;
             }
         }
+
         return ip;
     }
 
 
-
     /// <summary>
-    /// Find with everyline and insert
+    ///     Find with everyline and insert
     /// </summary>
     /// <param name="ip"></param>
     /// <returns></returns>
@@ -37,22 +36,17 @@ public class IPAddressHelper
     {
         IPAddress address;
         if (IPAddress.TryParse(ip, out address))
-        {
             switch (address.AddressFamily)
             {
-                case System.Net.Sockets.AddressFamily.InterNetwork:
+                case AddressFamily.InterNetwork:
                     // we have IPv4
                     return true;
                     break;
-                case System.Net.Sockets.AddressFamily.InterNetworkV6:
+                case AddressFamily.InterNetworkV6:
                     return false;
                     // we have IPv6
                     break;
-                default:
-                    // umm... yeah... I'm going to need to take your red packet and...
-                    break;
             }
-        }
 
         return null;
     }

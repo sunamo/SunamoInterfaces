@@ -2,7 +2,7 @@ namespace SunamoInterfaces.Interfaces;
 
 public interface IXmlParser
 {
-    void Parse(System.Xml.XmlNode node);
+    void Parse(XmlNode node);
 
     string ToXml();
 }

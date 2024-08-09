@@ -1,29 +1,28 @@
+using System.Timers;
+using Timer = System.Timers.Timer;
+
 namespace SunamoInterfaces.Interfaces;
-
-
 
 public class SunamoTimer
 {
-    protected System.Timers.Timer t = null;
-    Action a = null;
-    public event Action Tick;
+    private readonly Action a;
+    protected Timer t;
 
     public SunamoTimer(int ms, Action a, bool runImmediately)
     {
-        t = new System.Timers.Timer(ms);
+        t = new Timer(ms);
         t.Elapsed += t_Elapsed;
         t.AutoReset = true;
 
         this.a = a;
         t.Start();
 
-        if (runImmediately)
-        {
-            t_Elapsed(null, null);
-        }
+        if (runImmediately) t_Elapsed(null, null);
     }
 
-    void t_Elapsed(object sender, System.Timers.ElapsedEventArgs e)
+    public event Action Tick;
+
+    private void t_Elapsed(object sender, ElapsedEventArgs e)
     {
         try
         {
@@ -33,11 +32,7 @@ public class SunamoTimer
         {
             // often The calling thread cannot access this object because a different thread owns it.'
         }
-        if (Tick != null)
-        {
-            Tick();
-        }
 
-
+        if (Tick != null) Tick();
     }
 }

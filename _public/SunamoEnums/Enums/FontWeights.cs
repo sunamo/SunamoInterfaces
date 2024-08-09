@@ -1,6 +1,5 @@
 namespace SunamoInterfaces._public.SunamoEnums.Enums;
 
-
 public enum FontWeights : ushort
 {
     light = 100,

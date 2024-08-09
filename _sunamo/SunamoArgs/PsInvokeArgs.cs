@@ -1,26 +1,27 @@
 namespace SunamoInterfaces._sunamo.SunamoArgs;
 
-
 internal class PsInvokeArgs
 {
-    internal static readonly PsInvokeArgs Def = new PsInvokeArgs();
-    internal bool writePb = false;
+    internal static readonly PsInvokeArgs Def = new();
+    internal List<string> addBeforeEveryCommand = null;
+
     /// <summary>
-    /// earlier false
+    ///     earlier false
     /// </summary>
     internal bool immediatelyToStatus = false;
-    internal List<string> addBeforeEveryCommand = null;
+
     // nemůžu to dát do #if DEBUG protože se mi to nepromítne do nuget package
     // nevím proč furt dělám takové hloupé chyby které mě stojí čas
     //#if DEBUG
     /// <summary>
-    /// pokud soubor existuje, provede load a tím urychlí vykonávání
-    /// pokud neexistuje tak vykoná příkazy a save
-    ///
-    /// nepracuje nijak s datem poslední změny
+    ///     pokud soubor existuje, provede load a tím urychlí vykonávání
+    ///     pokud neexistuje tak vykoná příkazy a save
+    ///     nepracuje nijak s datem poslední změny
     /// </summary>
     //
     internal string pathToSaveLoadPsOutput = null;
+
+    internal bool writePb = false;
     //[Conditional("DEBUG")]
     //internal string GetPathToSaveLoadPsOutput()
     //{
