@@ -1,6 +1,5 @@
-using System.Net.Sockets;
-
 namespace SunamoInterfaces.Interfaces;
+using System.Net.Sockets;
 
 public class IPAddressHelper
 {

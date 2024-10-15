@@ -1,3 +1,5 @@
+using System.Xml.Linq;
+
 namespace SunamoInterfaces.Interfaces;
 
 public interface IXParser

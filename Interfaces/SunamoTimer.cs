@@ -1,7 +1,6 @@
+namespace SunamoInterfaces.Interfaces;
 using System.Timers;
 using Timer = System.Timers.Timer;
-
-namespace SunamoInterfaces.Interfaces;
 
 public class SunamoTimer
 {
