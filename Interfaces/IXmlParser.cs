@@ -1,6 +1,5 @@
-using System.Xml;
-
 namespace SunamoInterfaces.Interfaces;
+using System.Xml;
 
 public interface IXmlParser
 {

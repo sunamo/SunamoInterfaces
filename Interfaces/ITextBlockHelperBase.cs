@@ -1,6 +1,5 @@
-using SunamoInterfaces._public.SunamoEnums.Enums;
-
 namespace SunamoInterfaces.Interfaces;
+using SunamoInterfaces._public.SunamoEnums.Enums;
 
 public interface ITextBlockHelperBase<FontWeight, Italic, Inline, Bold, Run, InlineUIContainer, FontArgs>
 {

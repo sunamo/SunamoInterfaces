@@ -1,6 +1,5 @@
-using Newtonsoft.Json;
-
 namespace SunamoInterfaces.Interfaces;
+using Newtonsoft.Json;
 
 public interface IJsSerializer
 {
