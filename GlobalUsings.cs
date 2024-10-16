@@ -13,3 +13,4 @@ global using System.Data;
 global using System.Diagnostics;
 global using System.Reflection;
 global using SunamoInterfaces._public.SunamoArgs;
+global using System.Diagnostics.CodeAnalysis;
