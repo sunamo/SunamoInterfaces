@@ -1,5 +1,4 @@
 namespace SunamoInterfaces.Interfaces;
-using System.Net.Sockets;
 
 public class IPAddressHelper
 {
@@ -21,11 +20,8 @@ public class IPAddressHelper
                 ip[i] = b;
             }
         }
-
         return ip;
     }
-
-
     /// <summary>
     ///     Find with everyline and insert
     /// </summary>
@@ -46,13 +42,10 @@ public class IPAddressHelper
                     // we have IPv6
                     break;
             }
-
         return null;
     }
 }
-
 // Must import System.Web, not creating this class
 //public class HttpRequest
 //{
-
 //}
