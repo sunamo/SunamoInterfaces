@@ -1,5 +1,4 @@
 namespace SunamoInterfaces.Interfaces;
-using System.Xml;
 
 public interface IXmlGenerator
 {

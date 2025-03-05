@@ -20,3 +20,12 @@ global using SunamoInterfaces.Interfaces.SunamoPS;
 global using SunamoInterfaces._sunamo.SunamoArgs;
 global using SunamoInterfaces._sunamo.SunamoDelegates;
 global using SunamoInterfaces._public.SunamoEnums.Enums;
+
+global using Newtonsoft.Json;
+global using System.Net.Sockets;
+global using System.Timers;
+global using System.Xml.Linq;
+global using System.Xml;
+global using ILogger = Microsoft.Extensions.Logging.ILogger;
+global using Microsoft.Extensions.Logging;
+global using NullLogger = Microsoft.Extensions.Logging.Abstractions.NullLogger;
