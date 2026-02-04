@@ -1,9 +1,14 @@
 namespace SunamoInterfaces.Interfaces;
 
+/// <summary>
+/// Interface for parsing collections from object lists.
+/// </summary>
 public interface IParseCollectionO
 {
     /// <summary>
-    ///     Pro opacny proces slouzi M ToString().
+    /// Parses collection from list of objects.
+    /// For reverse process use ToString() method.
     /// </summary>
-    void ParseCollection(IList<object> soubory);
+    /// <param name="list">List of objects to parse.</param>
+    void ParseCollection(IList<object> list);
 }

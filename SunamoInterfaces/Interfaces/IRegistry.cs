@@ -1,10 +1,21 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
-///     M pro zakladni operace s registry.
+/// Interface for basic operations with Windows Registry.
 /// </summary>
 public interface IRegistry
 {
-    void SetValue(object value, string cesta);
-    object GetValue(string cesta);
+    /// <summary>
+    /// Sets a value in the registry at the specified path.
+    /// </summary>
+    /// <param name="value">Value to set.</param>
+    /// <param name="path">Registry path.</param>
+    void SetValue(object value, string path);
+
+    /// <summary>
+    /// Gets a value from the registry at the specified path.
+    /// </summary>
+    /// <param name="path">Registry path.</param>
+    /// <returns>Registry value.</returns>
+    object GetValue(string path);
 }

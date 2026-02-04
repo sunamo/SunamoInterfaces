@@ -1,12 +1,14 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
+/// Interface for search satisfaction checking.
 /// </summary>
 public interface ISatisfiesSearching
 {
     /// <summary>
-    ///     A1 je to co se hled�. Dal�� nast. se m��e v tomto �et�zci nebo v odd. t��d�ch.
+    /// Determines whether the object satisfies the search criteria.
     /// </summary>
-    /// <param name="s"></param>
-    bool SatisfiesSearch(string s);
+    /// <param name="searchTerm">The search term to check against.</param>
+    /// <returns>True if satisfies search, false otherwise.</returns>
+    bool SatisfiesSearch(string searchTerm);
 }

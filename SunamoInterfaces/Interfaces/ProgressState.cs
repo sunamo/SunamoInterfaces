@@ -1,41 +1,79 @@
 namespace SunamoInterfaces.Interfaces;
 
+/// <summary>
+/// Manages progress state and progress events.
+/// </summary>
 public class ProgressState
 {
-    public int n;
-    public bool isRegistered { get; set; }
+    private int currentCount;
 
-    public void Init(Action<int> OverallSongs, Action<int> AnotherSong, Action WriteProgressBarEnd)
+    /// <summary>
+    /// Gets or sets a value indicating whether progress events are registered.
+    /// </summary>
+    public bool IsRegistered { get; set; }
+
+    /// <summary>
+    /// Initializes progress tracking with event handlers.
+    /// </summary>
+    /// <param name="overallSongs">Handler for overall song count updates.</param>
+    /// <param name="anotherSong">Handler for individual song progress updates.</param>
+    /// <param name="writeProgressBarEnd">Handler for progress completion.</param>
+    public void Init(Action<int> overallSongs, Action<int> anotherSong, Action writeProgressBarEnd)
     {
-        isRegistered = true;
-        this.AnotherSong += AnotherSong;
-        this.OverallSongs += OverallSongs;
-        this.WriteProgressBarEnd += WriteProgressBarEnd;
+        IsRegistered = true;
+        this.AnotherSong += anotherSong;
+        this.OverallSongs += overallSongs;
+        this.WriteProgressBarEnd += writeProgressBarEnd;
     }
 
-    public event Action<int> AnotherSong;
-    public event Action<int> OverallSongs;
-    public event Action WriteProgressBarEnd;
+    /// <summary>
+    /// Event raised when another song is processed.
+    /// </summary>
+    public event Action<int>? AnotherSong;
 
+    /// <summary>
+    /// Event raised when the overall song count is set.
+    /// </summary>
+    public event Action<int>? OverallSongs;
+
+    /// <summary>
+    /// Event raised when progress bar ends.
+    /// </summary>
+    public event Action? WriteProgressBarEnd;
+
+    /// <summary>
+    /// Increments and raises the another song event with the current count.
+    /// </summary>
     public void OnAnotherSong()
     {
-        n++;
-        OnAnotherSong(n);
+        currentCount++;
+        OnAnotherSong(currentCount);
     }
 
-    public void OnAnotherSong(int n)
+    /// <summary>
+    /// Raises the another song event with the specified count.
+    /// </summary>
+    /// <param name="count">The current song count.</param>
+    public void OnAnotherSong(int count)
     {
-        AnotherSong(n);
+        AnotherSong?.Invoke(count);
     }
 
-    public void OnOverallSongs(int n2)
+    /// <summary>
+    /// Sets the overall song count and raises the overall songs event.
+    /// </summary>
+    /// <param name="totalCount">The total song count.</param>
+    public void OnOverallSongs(int totalCount)
     {
-        n = 0;
-        OverallSongs(n2);
+        currentCount = 0;
+        OverallSongs?.Invoke(totalCount);
     }
 
+    /// <summary>
+    /// Raises the progress bar end event.
+    /// </summary>
     public void OnWriteProgressBarEnd()
     {
-        WriteProgressBarEnd();
+        WriteProgressBarEnd?.Invoke();
     }
 }

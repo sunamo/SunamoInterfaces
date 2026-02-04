@@ -1,7 +1,9 @@
 namespace SunamoInterfaces._sunamo.SunamoEnums.Enums;
 
+// variables names: ok
+
 /// <summary>
-///     Zkratka pro SignedUnsigned
+/// Abbreviation for SignedUnsigned.
 /// </summary>
 internal enum Signed
 {

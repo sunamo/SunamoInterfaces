@@ -1,14 +1,15 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
-///     Dont use, instead of this IControlWithResult
-///     Only for closing is
+/// Interface for result handling.
+/// Note: Don't use this, use IControlWithResult instead.
+/// Only for closing operations.
 /// </summary>
 public interface IResult
 {
-    //object Result { get; }
     /// <summary>
-    ///     Dont use, instead of this IControlWithResult
+    /// Event raised when operation is finished.
+    /// Note: Don't use this, use IControlWithResult instead.
     /// </summary>
     event Action<object> Finished;
 }

@@ -1,13 +1,22 @@
-// EN: Variable names have been checked and replaced with self-descriptive names
-// CZ: Názvy proměnných byly zkontrolovány a nahrazeny samopopisnými názvy
 namespace SunamoInterfaces._public.SunamoArgs;
 
+/// <summary>
+/// Represents the result of an external login operation.
+/// </summary>
 public class ExternalLoginResult
 {
-    public int IdUser { get; set; }
+    /// <summary>
+    /// Gets or sets the user identifier.
+    /// </summary>
+    public int UserId { get; set; }
 
-    public string Sc { get; set; }
+    /// <summary>
+    /// Gets or sets the session cookie.
+    /// </summary>
+    public string? SessionCookie { get; set; }
 
-
-    public string P1 { get; set; }
+    /// <summary>
+    /// Gets or sets an additional parameter.
+    /// </summary>
+    public string? Parameter1 { get; set; }
 }

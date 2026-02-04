@@ -1,11 +1,18 @@
 namespace SunamoInterfaces.Interfaces;
 
 /// <summary>
-///     Must be in sunamo because is shared between MSSQl and SQL Server project
+/// Must be in sunamo because is shared between MSSQL and SQL Server project.
 /// </summary>
-/// <typeparam name="SqlDbType"></typeparam>
-public interface IDatabaseLayer<SqlDbType>
+/// <typeparam name="SqlDbType">The type representing SQL database types.</typeparam>
+public interface IDatabaseLayer<SqlDbType> where SqlDbType : notnull
 {
-    Dictionary<SqlDbType, string> usedTa { get; set; }
-    Dictionary<SqlDbType, string> hiddenTa { get; set; }
+    /// <summary>
+    /// Dictionary of used tables.
+    /// </summary>
+    Dictionary<SqlDbType, string> UsedTables { get; set; }
+
+    /// <summary>
+    /// Dictionary of hidden tables.
+    /// </summary>
+    Dictionary<SqlDbType, string> HiddenTables { get; set; }
 }

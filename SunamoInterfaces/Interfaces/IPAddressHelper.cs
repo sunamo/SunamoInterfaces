@@ -1,51 +1,56 @@
 namespace SunamoInterfaces.Interfaces;
 
+/// <summary>
+/// Helper class for IP address operations.
+/// </summary>
 public class IPAddressHelper
 {
     /// <summary>
-    ///     Vrátí null pokud cokoliv nebude sedět
+    /// Gets IP address as byte array.
+    /// Returns null if anything doesn't match.
     /// </summary>
-    /// <param name="ip2"></param>
-    public static byte[] GetIPAddressInArray(string ip2)
+    /// <param name="ipAddress">IP address string to parse.</param>
+    /// <returns>Byte array representing the IP address, or null if parsing fails.</returns>
+    public static byte[]? GetIPAddressInArray(string ipAddress)
     {
-        byte[] ip = null;
-        var ips = ip2.Split(new char['.']).ToList();
-        if (ips.Count == 4)
+        byte[]? ip = null;
+        var parts = ipAddress.Split('.').ToList();
+        if (parts.Count == 4)
         {
             ip = new byte[4];
             for (var i = 0; i < 4; i++)
             {
-                byte b = 0;
-                if (!byte.TryParse(ips[i], out b)) return null;
-                ip[i] = b;
+                byte byteValue = 0;
+                if (!byte.TryParse(parts[i], out byteValue))
+                {
+                    return null;
+                }
+                ip[i] = byteValue;
             }
         }
         return ip;
     }
+
     /// <summary>
-    ///     Find with everyline and insert
+    /// Determines whether the specified string is an IP address.
     /// </summary>
-    /// <param name="ip"></param>
-    /// <returns></returns>
-    public static bool? IsIpAddress(string ip)
+    /// <param name="ipAddress">The string to check.</param>
+    /// <returns>True if IPv4, false if IPv6, null if not an IP address.</returns>
+    public static bool? IsIpAddress(string ipAddress)
     {
-        IPAddress address;
-        if (IPAddress.TryParse(ip, out address))
+        IPAddress? address;
+        if (IPAddress.TryParse(ipAddress, out address))
+        {
             switch (address.AddressFamily)
             {
                 case AddressFamily.InterNetwork:
-                    // we have IPv4
+                    // IPv4
                     return true;
-                    break;
                 case AddressFamily.InterNetworkV6:
+                    // IPv6
                     return false;
-                    // we have IPv6
-                    break;
             }
+        }
         return null;
     }
 }
-// Must import System.Web, not creating this class
-//public class HttpRequest
-//{
-//}
