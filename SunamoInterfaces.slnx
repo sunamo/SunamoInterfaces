@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="SunamoInterfaces.Tests\\SunamoInterfaces.Tests.csproj" />
+  <Project Path="RunnerInterfaces\\RunnerInterfaces.csproj" />
+  <Project Path="SunamoInterfaces\SunamoInterfaces.csproj" />
+</Solution>
