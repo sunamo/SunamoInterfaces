@@ -13,22 +13,21 @@ public class IPAddressHelper
     /// <returns>Byte array representing the IP address, or null if parsing fails.</returns>
     public static byte[]? GetIPAddressInArray(string ipAddress)
     {
-        byte[]? ip = null;
+        byte[]? addressBytes = null;
         var parts = ipAddress.Split('.').ToList();
         if (parts.Count == 4)
         {
-            ip = new byte[4];
+            addressBytes = new byte[4];
             for (var i = 0; i < 4; i++)
             {
-                byte byteValue = 0;
-                if (!byte.TryParse(parts[i], out byteValue))
+                if (!byte.TryParse(parts[i], out byte byteValue))
                 {
                     return null;
                 }
-                ip[i] = byteValue;
+                addressBytes[i] = byteValue;
             }
         }
-        return ip;
+        return addressBytes;
     }
 
     /// <summary>
@@ -38,16 +37,13 @@ public class IPAddressHelper
     /// <returns>True if IPv4, false if IPv6, null if not an IP address.</returns>
     public static bool? IsIpAddress(string ipAddress)
     {
-        IPAddress? address;
-        if (IPAddress.TryParse(ipAddress, out address))
+        if (IPAddress.TryParse(ipAddress, out IPAddress? address))
         {
             switch (address.AddressFamily)
             {
                 case AddressFamily.InterNetwork:
-                    // IPv4
                     return true;
                 case AddressFamily.InterNetworkV6:
-                    // IPv6
                     return false;
             }
         }

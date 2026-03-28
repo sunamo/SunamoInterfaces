@@ -8,8 +8,8 @@ public interface IXParser
     /// <summary>
     /// Parses the specified XML element.
     /// </summary>
-    /// <param name="node">The XML element to parse.</param>
-    void Parse(XElement node);
+    /// <param name="element">The XML element to parse.</param>
+    void Parse(XElement element);
 
     /// <summary>
     /// Converts the parsed data to XML string.

@@ -15,26 +15,26 @@ public class ProgressState
     /// <summary>
     /// Initializes progress tracking with event handlers.
     /// </summary>
-    /// <param name="overallSongs">Handler for overall song count updates.</param>
-    /// <param name="anotherSong">Handler for individual song progress updates.</param>
+    /// <param name="overallItems">Handler for overall item count updates.</param>
+    /// <param name="anotherItem">Handler for individual item progress updates.</param>
     /// <param name="writeProgressBarEnd">Handler for progress completion.</param>
-    public void Init(Action<int> overallSongs, Action<int> anotherSong, Action writeProgressBarEnd)
+    public void Init(Action<int> overallItems, Action<int> anotherItem, Action writeProgressBarEnd)
     {
         IsRegistered = true;
-        this.AnotherSong += anotherSong;
-        this.OverallSongs += overallSongs;
+        this.AnotherItem += anotherItem;
+        this.OverallItems += overallItems;
         this.WriteProgressBarEnd += writeProgressBarEnd;
     }
 
     /// <summary>
-    /// Event raised when another song is processed.
+    /// Event raised when another item is processed.
     /// </summary>
-    public event Action<int>? AnotherSong;
+    public event Action<int>? AnotherItem;
 
     /// <summary>
-    /// Event raised when the overall song count is set.
+    /// Event raised when the overall item count is set.
     /// </summary>
-    public event Action<int>? OverallSongs;
+    public event Action<int>? OverallItems;
 
     /// <summary>
     /// Event raised when progress bar ends.
@@ -42,31 +42,31 @@ public class ProgressState
     public event Action? WriteProgressBarEnd;
 
     /// <summary>
-    /// Increments and raises the another song event with the current count.
+    /// Increments and raises the another item event with the current count.
     /// </summary>
-    public void OnAnotherSong()
+    public void OnAnotherItem()
     {
         currentCount++;
-        OnAnotherSong(currentCount);
+        OnAnotherItem(currentCount);
     }
 
     /// <summary>
-    /// Raises the another song event with the specified count.
+    /// Raises the another item event with the specified count.
     /// </summary>
-    /// <param name="count">The current song count.</param>
-    public void OnAnotherSong(int count)
+    /// <param name="count">The current item count.</param>
+    public void OnAnotherItem(int count)
     {
-        AnotherSong?.Invoke(count);
+        AnotherItem?.Invoke(count);
     }
 
     /// <summary>
-    /// Sets the overall song count and raises the overall songs event.
+    /// Sets the overall item count and raises the overall items event.
     /// </summary>
-    /// <param name="totalCount">The total song count.</param>
-    public void OnOverallSongs(int totalCount)
+    /// <param name="totalCount">The total item count.</param>
+    public void OnOverallItems(int totalCount)
     {
         currentCount = 0;
-        OverallSongs?.Invoke(totalCount);
+        OverallItems?.Invoke(totalCount);
     }
 
     /// <summary>

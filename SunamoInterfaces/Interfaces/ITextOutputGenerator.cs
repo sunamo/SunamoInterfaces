@@ -16,6 +16,7 @@ public interface ITextOutputGenerator
     /// <param name="key">The key.</param>
     /// <param name="value">The value.</param>
     void PairBullet(string key, string value);
+
     /// <summary>
     /// Appends text to the output.
     /// </summary>
@@ -43,8 +44,8 @@ public interface ITextOutputGenerator
     /// <summary>
     /// Appends a StringBuilder's content followed by a new line.
     /// </summary>
-    /// <param name="text">The StringBuilder to append.</param>
-    void AppendLine(StringBuilder text);
+    /// <param name="stringBuilder">The StringBuilder to append.</param>
+    void AppendLine(StringBuilder stringBuilder);
 
     /// <summary>
     /// Appends formatted text followed by a new line.
@@ -52,19 +53,20 @@ public interface ITextOutputGenerator
     /// <param name="text">The format string.</param>
     /// <param name="parameters">The parameters for the format string.</param>
     void AppendLineFormat(string text, params string[] parameters);
+
     /// <summary>
     /// Outputs count of every item in the list.
     /// </summary>
     /// <typeparam name="T">The type of the key.</typeparam>
-    /// <param name="items">The items with their counts.</param>
-    void CountEvery<T>(IList<KeyValuePair<T, int>> items);
+    /// <param name="list">The items with their counts.</param>
+    void CountEvery<T>(IList<KeyValuePair<T, int>> list);
 
     /// <summary>
     /// Outputs a dictionary of string keys to int values.
     /// </summary>
-    /// <param name="charEntity">The dictionary to output.</param>
+    /// <param name="dictionary">The dictionary to output.</param>
     /// <param name="delimiter">The delimiter to use.</param>
-    void Dictionary(Dictionary<string, int> charEntity, string delimiter);
+    void Dictionary(Dictionary<string, int> dictionary, string delimiter);
 
     /// <summary>
     /// Outputs a dictionary of string keys to string list values.
@@ -102,11 +104,11 @@ public interface ITextOutputGenerator
     /// </summary>
     /// <typeparam name="Key">The key type.</typeparam>
     /// <typeparam name="Value">The value type.</typeparam>
-    /// <param name="sorted">The sorted dictionary.</param>
+    /// <param name="dictionary">The dictionary to convert.</param>
     /// <param name="isPuttingValueAsFirst">Whether to put value before key.</param>
     /// <param name="delimiter">The delimiter to use.</param>
     /// <returns>The single line representation.</returns>
-    string DictionaryBothToStringToSingleLine<Key, Value>(Dictionary<Key, Value> sorted, bool isPuttingValueAsFirst,
+    string DictionaryBothToStringToSingleLine<Key, Value>(Dictionary<Key, Value> dictionary, bool isPuttingValueAsFirst,
         string delimiter = " ") where Key : notnull;
 
     /// <summary>
@@ -126,8 +128,8 @@ public interface ITextOutputGenerator
     /// <summary>
     /// Outputs a header.
     /// </summary>
-    /// <param name="headerText">The header text.</param>
-    void Header(string headerText);
+    /// <param name="header">The header text.</param>
+    void Header(string header);
 
     /// <summary>
     /// Outputs a list of strings.
@@ -187,9 +189,9 @@ public interface ITextOutputGenerator
     /// <summary>
     /// Outputs a string list with a header.
     /// </summary>
-    /// <param name="list">The list string to output.</param>
+    /// <param name="text">The list string to output.</param>
     /// <param name="header">The header text.</param>
-    void ListString(string list, string header);
+    void ListString(string text, string header);
 
     /// <summary>
     /// Outputs a "No data" message.
@@ -206,9 +208,9 @@ public interface ITextOutputGenerator
     /// <summary>
     /// Outputs a paragraph from StringBuilder with a header.
     /// </summary>
-    /// <param name="content">The paragraph content.</param>
+    /// <param name="stringBuilder">The paragraph content.</param>
     /// <param name="header">The header text.</param>
-    void Paragraph(StringBuilder content, string header);
+    void Paragraph(StringBuilder stringBuilder, string header);
 
     /// <summary>
     /// Outputs a line of repeated characters.

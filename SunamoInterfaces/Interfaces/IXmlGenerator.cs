@@ -48,15 +48,15 @@ public interface IXmlGenerator
     /// <summary>
     /// Writes a CDATA section.
     /// </summary>
-    /// <param name="innerCData">The content of the CDATA section.</param>
-    void WriteCData(string innerCData);
+    /// <param name="content">The content of the CDATA section.</param>
+    void WriteCData(string content);
 
     /// <summary>
     /// Writes an XML element with inner content.
     /// </summary>
     /// <param name="elementName">The element name.</param>
-    /// <param name="inner">The inner content.</param>
-    void WriteElement(string elementName, string inner);
+    /// <param name="content">The inner content.</param>
+    void WriteElement(string elementName, string content);
 
     /// <summary>
     /// Writes a self-closing (non-pair) XML tag.
@@ -85,30 +85,30 @@ public interface IXmlGenerator
     /// <summary>
     /// Writes a self-closing tag with multiple attributes, optionally appending null attributes.
     /// </summary>
-    /// <param name="appendNull">Whether to append null attributes.</param>
+    /// <param name="isAppendingNull">Whether to append null attributes.</param>
     /// <param name="tagName">The tag name.</param>
     /// <param name="attributes">The attributes as name-value pairs.</param>
-    void WriteNonPairTagWithAttrs(bool appendNull, string tagName, params string[] attributes);
+    void WriteNonPairTagWithAttrs(bool isAppendingNull, string tagName, params string[] attributes);
 
     /// <summary>
     /// Writes a self-closing tag with attributes from a list.
     /// </summary>
-    /// <param name="tag">The tag name.</param>
+    /// <param name="tagName">The tag name.</param>
     /// <param name="attributes">The list of attributes as name-value pairs.</param>
-    void WriteNonPairTagWithAttrs(string tag, List<string> attributes);
+    void WriteNonPairTagWithAttrs(string tagName, List<string> attributes);
 
     /// <summary>
     /// Writes a self-closing tag with multiple attributes.
     /// </summary>
-    /// <param name="tag">The tag name.</param>
+    /// <param name="tagName">The tag name.</param>
     /// <param name="attributes">The attributes as name-value pairs.</param>
-    void WriteNonPairTagWithAttrs(string tag, params string[] attributes);
+    void WriteNonPairTagWithAttrs(string tagName, params string[] attributes);
 
     /// <summary>
     /// Writes raw XML content without escaping.
     /// </summary>
-    /// <param name="rawContent">The raw content to write.</param>
-    void WriteRaw(string rawContent);
+    /// <param name="content">The raw content to write.</param>
+    void WriteRaw(string content);
 
     /// <summary>
     /// Writes an opening XML tag.
@@ -128,10 +128,10 @@ public interface IXmlGenerator
     /// <summary>
     /// Writes a tag with namespace manager and attributes.
     /// </summary>
-    /// <param name="nameTag">The tag name.</param>
+    /// <param name="tagName">The tag name.</param>
     /// <param name="namespaceManager">The namespace manager.</param>
     /// <param name="attributes">The attributes as name-value pairs.</param>
-    void WriteTagNamespaceManager(string nameTag, XmlNamespaceManager namespaceManager, params string[] attributes);
+    void WriteTagNamespaceManager(string tagName, XmlNamespaceManager namespaceManager, params string[] attributes);
 
     /// <summary>
     /// Writes an opening tag with two attributes.
@@ -146,11 +146,11 @@ public interface IXmlGenerator
     /// <summary>
     /// Writes an opening tag with one attribute, optionally skipping if empty or null.
     /// </summary>
-    /// <param name="tag">The tag name.</param>
+    /// <param name="tagName">The tag name.</param>
     /// <param name="attributeName">The attribute name.</param>
     /// <param name="attributeValue">The attribute value.</param>
-    /// <param name="skipEmptyOrNull">Whether to skip if attribute value is empty or null.</param>
-    void WriteTagWithAttr(string tag, string attributeName, string attributeValue, bool skipEmptyOrNull = false);
+    /// <param name="isSkippingEmptyOrNull">Whether to skip if attribute value is empty or null.</param>
+    void WriteTagWithAttr(string tagName, string attributeName, string attributeValue, bool isSkippingEmptyOrNull = false);
 
     /// <summary>
     /// Writes an opening tag with attributes from a list.

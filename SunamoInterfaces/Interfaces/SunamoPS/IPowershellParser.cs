@@ -9,7 +9,7 @@ public interface IPowershellParser
     /// Parses text into parts using a delimiter character.
     /// </summary>
     /// <param name="text">The text to parse.</param>
-    /// <param name="charWhichIsNotContained">The delimiter character that is not contained in the parts.</param>
+    /// <param name="delimiter">The delimiter character that is not contained in the parts.</param>
     /// <returns>List of parsed parts.</returns>
-    List<string> ParseToParts(string text, string charWhichIsNotContained);
+    List<string> ParseToParts(string text, string delimiter);
 }

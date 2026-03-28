@@ -44,8 +44,8 @@ public interface ISunamoDictionary<T, U>
     /// <summary>
     /// Adds the specified key/value pair to the dictionary.
     /// </summary>
-    /// <param name="item">The key/value pair to add.</param>
-    void Add(KeyValuePair<T, U> item);
+    /// <param name="pair">The key/value pair to add.</param>
+    void Add(KeyValuePair<T, U> pair);
 
     /// <summary>
     /// Removes all keys and values from the dictionary.
@@ -55,9 +55,9 @@ public interface ISunamoDictionary<T, U>
     /// <summary>
     /// Determines whether the dictionary contains the specified key/value pair.
     /// </summary>
-    /// <param name="item">The key/value pair to locate.</param>
+    /// <param name="pair">The key/value pair to locate.</param>
     /// <returns>True if found; otherwise, false.</returns>
-    bool Contains(KeyValuePair<T, U> item);
+    bool Contains(KeyValuePair<T, U> pair);
 
     /// <summary>
     /// Determines whether the dictionary contains the specified key.
@@ -89,9 +89,9 @@ public interface ISunamoDictionary<T, U>
     /// <summary>
     /// Removes the specified key/value pair from the dictionary.
     /// </summary>
-    /// <param name="item">The key/value pair to remove.</param>
-    /// <returns>True if the item was removed; otherwise, false.</returns>
-    bool Remove(KeyValuePair<T, U> item);
+    /// <param name="pair">The key/value pair to remove.</param>
+    /// <returns>True if the pair was removed; otherwise, false.</returns>
+    bool Remove(KeyValuePair<T, U> pair);
 
     /// <summary>
     /// Gets the value associated with the specified key.
