@@ -1,16 +1,9 @@
 namespace SunamoInterfaces.Interfaces;
 
-/// <summary>
-/// Helper class for IP address operations.
-/// </summary>
 public class IPAddressHelper
 {
-    /// <summary>
-    /// Gets IP address as byte array.
-    /// Returns null if anything doesn't match.
-    /// </summary>
-    /// <param name="ipAddress">IP address string to parse.</param>
-    /// <returns>Byte array representing the IP address, or null if parsing fails.</returns>
+    // Gets IP address as byte array.
+    // Returns null if anything doesn't match.
     public static byte[]? GetIPAddressInArray(string ipAddress)
     {
         byte[]? addressBytes = null;
@@ -30,11 +23,7 @@ public class IPAddressHelper
         return addressBytes;
     }
 
-    /// <summary>
-    /// Determines whether the specified string is an IP address.
-    /// </summary>
-    /// <param name="ipAddress">The string to check.</param>
-    /// <returns>True if IPv4, false if IPv6, null if not an IP address.</returns>
+    // True if IPv4, false if IPv6, null if not an IP address.
     public static bool? IsIpAddress(string ipAddress)
     {
         if (IPAddress.TryParse(ipAddress, out IPAddress? address))
