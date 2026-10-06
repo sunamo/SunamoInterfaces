@@ -1,5 +1,10 @@
 # SunamoInterfaces
 
+## Short description
+
+Sada rozhraní sdílených napříč balíčky Sunamo, například IAsync, IAsyncFile, IClipboardHelper, IClipboardMonitor a IConvertConvention. Umožňuje volnou vazbu mezi balíčky bez přímých referencí. Obsahuje Runner a testy.
+
+
 Interfaces shared across many packages in the Sunamo ecosystem.
 
 ## Overview
