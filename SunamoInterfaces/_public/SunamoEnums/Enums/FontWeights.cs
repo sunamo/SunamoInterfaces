@@ -1,6 +1,5 @@
 namespace SunamoInterfaces._public.SunamoEnums.Enums;
 
-// variables names: ok
 
 public enum FontWeights : ushort
 {
